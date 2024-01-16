@@ -56,6 +56,20 @@ h6 {
   opacity: 1;
 }
 
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 5px #5faee3)
+  }
+
+  25% {
+    filter: drop-shadow(0 0 10px #5faee3)
+  }
+
+  100% {
+    filter: drop-shadow(0 0 20px #5faee3)
+  }
+}
+
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -72,7 +86,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 22px 0;
-  background: #fff;
+  background: #d6e8f4;
 }
 
 #header.header-scrolled {

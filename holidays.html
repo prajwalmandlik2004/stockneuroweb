@@ -6,15 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holidays</title>
     <link rel="stylesheet" href="./assets/css/event.css">
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #45bcdd;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Holidays</h1>
-    <div class="main">
-        <a href="./market.html"><button>Market Holidays</button></a>
-        <a href="./public.html"><button>Public Holidays</button></a>
-        
-    </div>
+    <table id="customers">
+        <tr>
+            <th>Holiday</th>
+            <th>2024</th>
+            <th>2025</th>
+            <th>2026</th>
+        </tr>
+        <tr>
+            <td>New Year’s Day</td>
+            <td>Monday, January 1</td>
+            <td>Monday, January 1</td>
+            <td>Monday, January 1</td>
+        </tr>
+        <tr>
+            <td>Martin Luther King, Jr. Day</td>
+            <td>Monday, January 15 </td>
+            <td>Saturday, January 20 </td>
+            <td>Firday, January 19 </td>
+
+        </tr>
+        <tr>
+            <td>Washington's Birthday</td>
+            <td>Monday, February 19 </td>
+            <td>Saturday, February 17 </td>
+            <td>Firday, February 16 </td>
+        </tr>
+        <tr>
+            <td>Good Friday</td>
+            <td>Friday, March 29</td>
+            <td>Thursday, April 18</td>
+            <td>Wednesday, April 3</td>
+        </tr>
+        <tr>
+            <td>Memorial Day</td>
+            <td>Monday, May 27</td>
+            <td>Sunday, May 26</td>
+            <td>Saturday, May 25</td>
+        </tr>
+        <tr>
+            <td>Juneteenth National Independence Day</td>
+            <td>Wednesday, June 19 </td>
+            <td>Wednesday, June 19 </td>
+            <td>Wednesday, June 19 </td>
+
+        </tr>
+        <tr>
+            <td>Independence Day</td>
+            <td>Thursday, July 4*</td>
+            <td>Friday, July 4*</td>
+            <td>Friday, July 3 (Independence Day observed)</td>
+        </tr>
+        <tr>
+            <td>Labor Day</td>
+            <td>Monday, September 2</td>
+            <td>Sunday, September 1</td>
+            <td>Saturday, September 7</td>
+        </tr>
+        <tr>
+            <td>Thanksgiving Day</td>
+            <td>Thursday, November 28**</td>
+            <td>Thursday, November 27**</td>
+            <td>Thursday, November 26**</td>
+        </tr>
+        <tr>
+            <td>Christmas Day</td>
+            <td>Wednesday, December 25*** </td>
+            <td>Thursday, December 25*** </td>
+            <td>Friday, December 25*** </td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
