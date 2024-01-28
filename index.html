@@ -50,7 +50,7 @@
           <!-- <li><a class="nav-link scrollto" href="./marketGraph.html">Market Graph</a></li> -->
           <li><a class="nav-link scrollto" href="./event.html">Event</a></li>
           <li><a class="nav-link scrollto" href="./jobs.html">Job</a></li>
-          <li><a class="nav-link scrollto" href="./ecommerce.html">E-Commerce</a></li>
+          <li><a class="nav-link scrollto" onclick="ecom()" href="./ecommerce.html">E-Commerce</a></li>
           <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">English</a></li>
@@ -137,30 +137,106 @@
 
 
 
-    <!-- <h2 class="summary">📊 Market Summary 📊</h2> -->
-    <!-- <br> -->
+    <!-- <h2 class="summary">📊 Market Summary ➡</h2> -->
+    <button class="summary"> 📊 Market Summary ➡</button>
+    <br>
     <div class="market">
+
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow"
+            target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async>
+            {
+              "symbols";[
+                {
+                  "proName": "FOREXCOM:SPXUSD",
+                  "title": "S&P 500"
+                },
+                {
+                  "proName": "FOREXCOM:NSXUSD",
+                  "title": "US 100"
+                },
+                {
+                  "proName": "FX_IDC:EURUSD",
+                  "title": "EUR to USD"
+                },
+                {
+                  "proName": "BITSTAMP:BTCUSD",
+                  "title": "Bitcoin"
+                },
+                {
+                  "proName": "BITSTAMP:ETHUSD",
+                  "title": "Ethereum"
+                }
+              ],
+                "showSymbolLogo"; true,
+                  "isTransparent"; false,
+                    "displayMode"; "adaptive",
+                      "colorTheme"; "dark",
+                        "locale"; "in"
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow"
+            target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js"
+          async>
+            {
+              "colorTheme"; "dark",
+                "dateRange"; "12M",
+                  "exchange"; "BSE",
+                    "showChart"; true,
+                      "locale"; "in",
+                        "largeChartUrl"; "",
+                          "isTransparent"; false,
+                            "showSymbolLogo"; false,
+                              "showFloatingTooltip"; false,
+                                "width"; "400",
+                                  "height"; "600",
+                                    "plotLineColorGrowing"; "rgba(41, 98, 255, 1)",
+                                      "plotLineColorFalling"; "rgba(41, 98, 255, 1)",
+                                        "gridLineColor"; "rgba(240, 243, 250, 0)",
+                                          "scaleFontColor"; "rgba(106, 109, 120, 1)",
+                                            "belowLineFillColorGrowing"; "rgba(41, 98, 255, 0.12)",
+                                              "belowLineFillColorFalling"; "rgba(41, 98, 255, 0.12)",
+                                                "belowLineFillColorGrowingBottom"; "rgba(41, 98, 255, 0)",
+                                                  "belowLineFillColorFallingBottom"; "rgba(41, 98, 255, 0)",
+                                                    "symbolActiveColor"; "rgba(41, 98, 255, 0.12)"
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+
+
       <blockquote class="trendlyne-widgets"
-        data-get-url="https://trendlyne.com/web-widget/technical-widget/Poppins/HDFCBANK/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
+        data-get-url="https://trendlyne.com/web-widget/technical-widget/Poppins/HDFCBANK/?posCol=00A25B&primaryCol=6db3fd&negCol=EB3B00&neuCol=F7941E"
         data-theme="light"></blockquote>
       <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
 
 
       <blockquote class="trendlyne-widgets"
-        data-get-url="https://trendlyne.com/web-widget/technical-widget/Poppins/ICICIBANK/?posCol=f81b1b&primaryCol=ffd500&negCol=43df6a&neuCol=61d7ff"
+        data-get-url="https://trendlyne.com/web-widget/technical-widget/Poppins/ICICIBANK/?posCol=00A25B&primaryCol=33e668&negCol=EB3B00&neuCol=F7941E"
         data-theme="light"></blockquote>
       <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
 
+    </div>
 
-      <blockquote class="trendlyne-widgets"
-        data-get-url="https://trendlyne.com/web-widget/swot-widget/Poppins/RELIANCE/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
-        data-theme="light"></blockquote>
-      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
 
-      <blockquote class="trendlyne-widgets"
-        data-get-url="https://trendlyne.com/web-widget/swot-widget/Poppins/TCS/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
-        data-theme="light"></blockquote>
-      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
+    <br>
+    <button class="summary"> 📊 Market Chart ➡</button>
+    <hr>
+    <div class="market">
 
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
@@ -222,16 +298,29 @@
 
       </div>
       <!-- TradingView Widget END -->
-
     </div>
 
 
 
 
 
+    <br>
+    <button class="summary"> 📊 SWOT ➡</button>
+    <hr>
+    <div class="market">
+
+      <blockquote class="trendlyne-widgets"
+        data-get-url="https://trendlyne.com/web-widget/swot-widget/Poppins/RELIANCE/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
+        data-theme="light"></blockquote>
+      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
+
+      <blockquote class="trendlyne-widgets"
+        data-get-url="https://trendlyne.com/web-widget/swot-widget/Poppins/TCS/?posCol=14c853&primaryCol=ff8800&negCol=7024ff&neuCol=ff0f0f"
+        data-theme="light"></blockquote>
+      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
 
 
-
+    </div>
 
 
 
@@ -340,3 +429,4 @@
 </body>
 
 </html>
+

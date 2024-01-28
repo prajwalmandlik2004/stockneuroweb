@@ -1593,15 +1593,25 @@ section {
   align-items: center;
 }
 
-.summary {
+/* .summary {
   text-align: center;
   background-color: #d6e8f4;
   padding: 10px;
   margin: 10px;
   padding: 10px;
   color: black;
-  filter: drop-shadow(0 0 5px #5faee3);
   font-weight: bold;
+} */
+
+.summary {
+  width: 100%;
+  padding:10px;
+  font-size: 20px;
+  font-weight: bold;
+  color:black;
+  background-color: #d6e8f4;
+  border:2px solid #d6e8f4;
+  border-radius: 2%;
 }
 
 
