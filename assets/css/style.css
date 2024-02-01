@@ -685,6 +685,53 @@ section {
   }
 }
 
+
+/* Contact Us */
+
+/* img {
+  margin-left: 200px;
+} */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background-color: #d6e8f4;
+  padding : 10px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.contact img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+h4{
+  margin: 10px;
+  font-size: 20px;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: #d6e8f4;
+  width: 100%;
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color : black;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1605,12 +1652,12 @@ section {
 
 .summary {
   width: 100%;
-  padding:10px;
+  padding: 10px;
   font-size: 20px;
   font-weight: bold;
-  color:black;
+  color: black;
   background-color: #d6e8f4;
-  border:2px solid #d6e8f4;
+  border: 2px solid #d6e8f4;
   border-radius: 2%;
 }
 
