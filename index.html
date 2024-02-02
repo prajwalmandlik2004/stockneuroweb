@@ -142,7 +142,7 @@
     <!-- <h2 class="summary">📊 Market Summary ➡</h2> -->
     <button class="summary"> 📊 Market Summary ➡</button>
     <br>
-    <div class="market">
+    <div class="market" style="background-color: #d6e8f4;">
 
 
       <!-- TradingView Widget BEGIN -->
@@ -186,38 +186,16 @@
       <!-- TradingView Widget END -->
 
 
-      <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow"
-            target="_blank"><span class="blue-text"></span></a></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js"
-          async>
-            {
-              "colorTheme"; "dark",
-                "dateRange"; "12M",
-                  "exchange"; "BSE",
-                    "showChart"; true,
-                      "locale"; "in",
-                        "largeChartUrl"; "",
-                          "isTransparent"; false,
-                            "showSymbolLogo"; false,
-                              "showFloatingTooltip"; false,
-                                "width"; "400",
-                                  "height"; "600",
-                                    "plotLineColorGrowing"; "rgba(41, 98, 255, 1)",
-                                      "plotLineColorFalling"; "rgba(41, 98, 255, 1)",
-                                        "gridLineColor"; "rgba(240, 243, 250, 0)",
-                                          "scaleFontColor"; "rgba(106, 109, 120, 1)",
-                                            "belowLineFillColorGrowing"; "rgba(41, 98, 255, 0.12)",
-                                              "belowLineFillColorFalling"; "rgba(41, 98, 255, 0.12)",
-                                                "belowLineFillColorGrowingBottom"; "rgba(41, 98, 255, 0)",
-                                                  "belowLineFillColorFallingBottom"; "rgba(41, 98, 255, 0)",
-                                                    "symbolActiveColor"; "rgba(41, 98, 255, 0.12)"
-            }
-          </script>
-      </div>
-      <!-- TradingView Widget END -->
+      <blockquote class="trendlyne-widgets"
+        data-get-url="https://trendlyne.com/web-widget/qvt-widget/Poppins/INFY/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
+        data-theme="light"></blockquote>
+      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
+
+
+      <blockquote class="trendlyne-widgets"
+        data-get-url="https://trendlyne.com/web-widget/qvt-widget/Poppins/TCS/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
+        data-theme="light"></blockquote>
+      <script async src="https://cdn-static.trendlyne.com/static/js/webwidgets/tl-widgets.js" charset="utf-8"> </script>
 
 
 
@@ -237,7 +215,49 @@
 
     <br>
     <button class="summary"> 📊 Market Chart ➡</button>
+    <br>
     <div class="market">
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow"
+            target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+          async>
+            {
+              "symbols";[
+                {
+                  "proName": "FOREXCOM:SPXUSD",
+                  "title": "S&P 500"
+                },
+                {
+                  "proName": "FOREXCOM:NSXUSD",
+                  "title": "US 100"
+                },
+                {
+                  "proName": "FX_IDC:EURUSD",
+                  "title": "EUR to USD"
+                },
+                {
+                  "proName": "BITSTAMP:BTCUSD",
+                  "title": "Bitcoin"
+                },
+                {
+                  "proName": "BITSTAMP:ETHUSD",
+                  "title": "Ethereum"
+                }
+              ],
+                "isTransparent"; false,
+                  "showSymbolLogo"; true,
+                    "colorTheme"; "dark",
+                      "locale"; "en"
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+
 
       <!-- TradingView Widget BEGIN -->
       <div class="tradingview-widget-container">
@@ -300,6 +320,41 @@
       </div>
       <!-- TradingView Widget END -->
 
+
+      <!-- TradingView Widget BEGIN -->
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow"
+            target="_blank"><span class="blue-text"></span></a></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js"
+          async>
+            {
+              "colorTheme"; "dark",
+                "dateRange"; "12M",
+                  "exchange"; "BSE",
+                    "showChart"; true,
+                      "locale"; "in",
+                        "largeChartUrl"; "",
+                          "isTransparent"; false,
+                            "showSymbolLogo"; false,
+                              "showFloatingTooltip"; false,
+                                "width"; "400",
+                                  "height"; "600",
+                                    "plotLineColorGrowing"; "rgba(41, 98, 255, 1)",
+                                      "plotLineColorFalling"; "rgba(41, 98, 255, 1)",
+                                        "gridLineColor"; "rgba(240, 243, 250, 0)",
+                                          "scaleFontColor"; "rgba(106, 109, 120, 1)",
+                                            "belowLineFillColorGrowing"; "rgba(41, 98, 255, 0.12)",
+                                              "belowLineFillColorFalling"; "rgba(41, 98, 255, 0.12)",
+                                                "belowLineFillColorGrowingBottom"; "rgba(41, 98, 255, 0)",
+                                                  "belowLineFillColorFallingBottom"; "rgba(41, 98, 255, 0)",
+                                                    "symbolActiveColor"; "rgba(41, 98, 255, 0.12)"
+            }
+          </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+
     </div>
 
 
@@ -307,7 +362,7 @@
     <br>
     <button class="summary"> 📊 SWOT ➡</button>
     <hr>
-    <div class="market">
+    <div class="market" style="background-color: #d6e8f4; padding : 20px;">
 
       <blockquote class="trendlyne-widgets"
         data-get-url="https://trendlyne.com/web-widget/swot-widget/Poppins/RELIANCE/?posCol=00A25B&primaryCol=006AFF&negCol=EB3B00&neuCol=F7941E"
@@ -456,5 +511,3 @@
 </body>
 
 </html>
-
-
