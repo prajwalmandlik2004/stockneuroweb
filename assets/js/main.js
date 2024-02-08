@@ -267,3 +267,7 @@ const ecom = () => {
   alert("Comming Soon !!");
 }
 
+const tour = () =>{
+  alert("Activating Soon 🏝")
+}
+
