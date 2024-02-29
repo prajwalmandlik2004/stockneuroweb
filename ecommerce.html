@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travels</title>
+    <!-- Favicons -->
+    <link href="assets/img/newlogo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 6rem;
+            background-color: #f5f5f5;
+            font-family: "Inter", sans-serif;
+        }
+
+        @media (max-width: 60em) {
+            body {
+                padding: 3rem;
+            }
+        }
+
+        .grid {
+            margin-top: 50px;
+            display: grid;
+            width: 114rem;
+            grid-gap: 6rem;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            align-items: start;
+        }
+
+        @media (max-width: 60em) {
+            .grid {
+                grid-gap: 3rem;
+            }
+        }
+
+        .grid__item {
+            background-color: #fff;
+            border-radius: 0.4rem;
+            overflow: hidden;
+            box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .grid__item:hover {
+            transform: translateY(-0.5%);
+            box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+        }
+
+        .card__img {
+            display: block;
+            width: 100%;
+            height: 18rem;
+            object-fit: cover;
+        }
+
+        .card__content {
+            padding: 3rem 3rem;
+        }
+
+        .card__header {
+            font-size: 3rem;
+            font-weight: 500;
+            color: #0d0d0d;
+            margin-bottom: 1.5rem;
+        }
+
+        .card__text {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.7;
+            color: #3d3d3d;
+            margin-bottom: 2.5rem;
+        }
+
+        .card__btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+            background-color: #7292fe;
+            border: none;
+            border-radius: 0.4rem;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .card__btn span {
+            margin-left: 1rem;
+            transition: 0.2s;
+        }
+
+        .card__btn:hover,
+        .card__btn:active {
+            background-color: #dce4ff;
+        }
+
+        .card__btn:hover span,
+        .card__btn:active span {
+            margin-left: 1.5rem;
+        }
+
+        h2 {
+            background-color: #d6e8f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html">StockNeuro</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="./news.html">News</a></li>
+                    <li><a class="nav-link scrollto" href="./event.html">Market View</a></li>
+                    <li><a class="nav-link scrollto" href="./jobs.html">Job</a></li>
+                    <li><a href="./tours.html">Tours and Travels</a></li>
+                    <!-- <li><a href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=574d642c6ea99715cd3b84993c185f3e&camp=3638&creative=24630&node=976392031"
+                            target="_blank">E-Commerce</a>
+                    </li> -->
+
+                    <li><a href="./ecommerce.html">E-Commerce</a>
+                        <!-- <li class="dropdown"><a href="#"><span>E-Commerce</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="./dress.html">
+                                    Fashion and Cloths
+                                </a></li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=1b1ca675677b2e48706198c8b630e193&camp=3638&creative=24630&node=7124358031">Jewellery</a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=c61286ffec64786eed0af29338483fb2&camp=3638&creative=24630&node=1458204031">Computer
+                                    and Accessories</a></li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=422ff32ed78c1edaab666ba60c69695a&camp=3638&creative=24630&node=1984443031">Sports
+                                    and Outdoors</a></li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=aa329df91970371538f8a681fb65b1a9&camp=3638&creative=24630&node=1350387031">Watches</a>
+                            </li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=a263b9929062c0143d443fa0da2c3175&camp=3638&creative=24630&node=976442031">Kitchen
+                                    and Housewares</a></li>
+                            <li><a target="_blank"
+                                    href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=d241e9989598cd6c2715caed2ebf3068&camp=3638&creative=24630&node=1983396031">Shoes</a>
+                            </li>
+                        </ul>
+                    </li> -->
+
+                        <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+                      <ul>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Hindi</a></li>
+                        <li><a href="#">Marathi</a></li>
+                      </ul>
+                    </li> -->
+                        <!-- <li><a class="nav-link scrollto" href="contact.html">Contact</a></li> -->
+                    <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="index.html" onclick="login()">Login</a></li>
+                    <!-- <li><a class="getstarted scrollto" href="#contact">SignUp</a></li> -->
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+
+
+    <!-- <section>
+        <div class="main">
+            <button>Hello</button>
+        </div>
+    </section> -->
+
+    <!-- <div class="category">
+        <a href="">
+            <button>Cloths and Fashion</button>
+        </a>
+    </div> -->
+
+
+    <div class="grid">
+
+        <div class="grid__item">
+
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress1.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Clothing</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3> -->
+                    <!-- <h3>Contact : <b>8104066627</b></h3> -->
+                    <h2 style="text-align: center;"><b>Fashion and Cloths</b></h2>
+
+                    <!-- <a target="_blank" href="./tour/KEDARNATH YATRA Inspire (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./dress.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">Order
+                            Now</button></a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress6.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Meghalaya</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <h2 style="text-align: center;"><b>Shoes</b></h2>
+                    <!-- <a target="_blank" href="./tour/Meghalaya (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./shoes.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">Order
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress2.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Himachal</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <h2 style="text-align: center;"><b>Jewellery</b></h2>
+                    <!-- <a target="_blank" href="./tour/Himachal(holi) Itinerary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./jewellery.html"><button style="background-color: rgb(18, 184, 18);"
+                            class="card__btn">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress3.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Kerala</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <h2 style="text-align: center;"><b>Computer and Accesories</b></h2>
+                    <!-- <a target="_blank" href="./tour/Kerala Itineary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./computer.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">
+                            Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress4.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Kashmir</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <h2 style="text-align: center;"><b>Sports and Outdoors</b></h2>
+                    <!-- <a target="_blank" href="./tour/kashmir Itineary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+
+                    <a href="./sports.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">Order
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress6.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Meghalaya</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <h2 style="text-align: center;"><b>Watches</b></h2>
+                    <!-- <a target="_blank" href="./tour/Meghalaya (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./watches.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">Order
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <!-- <img src="./assets/img/dress7.png" alt="" style="filter : saturate(1.5); width: 100%;"> -->
+                    <!-- <h2 class="card__header">Vaishno Devi</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <h2 style="text-align: center;"><b>Kitchen and Housewares</b></h2>
+                    <!-- <a target="_blank" href="./tour/vaishno devi inspire (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a href="./kitchen.html"><button style="background-color: rgb(18, 184, 18);" class="card__btn">Order
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

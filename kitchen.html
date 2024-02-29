@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tours and Travels</title>
     <!-- Favicons -->
     <link href="assets/img/newlogo.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -114,11 +114,13 @@
         .card__btn {
             display: block;
             width: 100%;
-            padding: 1.5rem;
+            padding: 1rem;
             font-size: 2rem;
+            font-weight: bold;
+            margin-top: 20px;
             text-align: center;
-            color: #3363ff;
-            background-color: #e6ecff;
+            color: white;
+            background-color: #7292fe;
             border: none;
             border-radius: 0.4rem;
             transition: 0.2s;
@@ -140,8 +142,10 @@
             margin-left: 1.5rem;
         }
 
-        img {
-            filter: contrast(140%);
+        h2 {
+            background-color: #d6e8f4;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -163,19 +167,11 @@
                     <li><a class="nav-link scrollto" href="./news.html">News</a></li>
                     <li><a class="nav-link scrollto" href="./event.html">Market View</a></li>
                     <li><a class="nav-link scrollto" href="./jobs.html">Job</a></li>
-                    <!-- <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                           
-                        </ul>
-                    </li> -->
-
                     <li><a href="./tours.html">Tours and Travels</a></li>
                     <!-- <li><a href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=574d642c6ea99715cd3b84993c185f3e&camp=3638&creative=24630&node=976392031"
                             target="_blank">E-Commerce</a>
                     </li> -->
-
-                    <li><a href="./ecommerce.html">E-Commerce</a>
-                    <!-- <li class="dropdown"><a href="#"><span>E-Commerce</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>E-Commerce</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="./dress.html">
                                     Fashion and Cloths
@@ -199,7 +195,7 @@
                                     href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=d241e9989598cd6c2715caed2ebf3068&camp=3638&creative=24630&node=1983396031">Shoes</a>
                             </li>
                         </ul>
-                    </li> -->
+                    </li>
 
                     <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
                       <ul>
@@ -220,50 +216,135 @@
     </header><!-- End Header -->
 
 
-    <div class="contact" style="margin-top: 100px;">
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <h1 style="color : black; font-weight: bold;">Contact Us</h1>
-            <br>
-            <input type="hidden" name="access_key" value="01661a48-2475-4c91-ae48-8e991c62680c">
-            <div class="row g-3">
-                <div class="col-md-6">
 
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
-                            required>
-                        <label for="email">Your Email</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
-                            required>
-                        <label for="subject">Subject</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a message here" id="message"
-                            style="height: 200px" name="message" required></textarea>
-                        <label for="message">Message</label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send
-                        Message</button>
+    <!-- <section>
+        <div class="main">
+            <button>Hello</button>
+        </div>
+    </section> -->
+
+
+
+
+
+    <div class="grid">
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k1.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Clothing</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <br>
+                    <!-- <a target="_blank" href="./tour/KEDARNATH YATRA Inspire (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn">Order Now</button></a>
+
                 </div>
             </div>
-        </form>
+        </div>
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k2.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Himachal</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <br><br>
+                    <!-- <a target="_blank" href="./tour/Himachal(holi) Itinerary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k3.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Kerala</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <br>
+                    <!-- <a target="_blank" href="./tour/Kerala Itineary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn"> Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k4.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Kashmir</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+
+                    <!-- <a target="_blank" href="./tour/kashmir Itineary (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k5.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Meghalaya</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <br>
+                    <!-- <a target="_blank" href="./tour/Meghalaya (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="grid__item">
+            <div class="card">
+                <div class="card__content">
+                    <img src="./assets/img/k6.jpg" alt="" style="filter : saturate(1.5); width: 100%;">
+                    <!-- <h2 class="card__header">Vaishno Devi</h2> -->
+                    <!-- <h3>Sales Person : <b>Suraj Singh</b></h3>
+                    <h3>Contact : <b>8104066627</b></h3>
+                    <h3>Email : <b>suraj33731@gmail.com</b></h3> -->
+                    <br>
+                    <!-- <a target="_blank" href="./tour/vaishno devi inspire (1).pdf"><button class="card__btn">Check
+                            Details<span>&rarr;</span></button></a> -->
+                    <a target="_blank"
+                        href="https://www.amazon.in/b?_encoding=UTF8&tag=zafarsai-21&linkCode=ur2&linkId=b02483d65233ba6b9ce3a80baccac9a5&camp=3638&creative=24630&node=976442031"><button
+                            style="background-color: rgb(18, 184, 18);" class="card__btn">Order Now</button></a>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
